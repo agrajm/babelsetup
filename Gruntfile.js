@@ -4,7 +4,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-
+	// Initialize Grunt with tasks
 	grunt.initConfig({
 		'browserify': {
 			dist: {
@@ -28,7 +28,7 @@ module.exports = function(grunt){
 		}
 	});
 
-	grunt.registerTask('default', 'watch');
-	grunt.registerTask('build', ['browserify']);
+	grunt.registerTask('default', 'browserify');
+	grunt.registerTask('build', 'watch');
 
 }
