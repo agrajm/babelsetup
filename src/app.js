@@ -1,10 +1,2 @@
-class test{
+import * as functions from './arrow-functions'
 
-	getItems(){
-		return [];
-	}
-
-	saveItem(item){
-
-	}
-}
